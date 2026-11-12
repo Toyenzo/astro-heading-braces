@@ -1,0 +1,13 @@
+---
+import { Content, getHeadings } from '../post.md';
+const headings = getHeadings();
+---
+<html>
+  <body>
+    <h1>getHeadings() output</h1>
+    <pre id="headings">{JSON.stringify(headings, null, 2)}</pre>
+    <hr />
+    <h1>Rendered Markdown</h1>
+    <Content />
+  </body>
+</html>
